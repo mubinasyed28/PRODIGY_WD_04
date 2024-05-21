@@ -1,0 +1,143 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+header.sticky {
+    background-color: rgba(51, 51, 51, 0.9);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+header nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 5em 1em;
+    text-align: center;
+}
+
+.section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#home {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding-top: 6em;
+}
+
+#home .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#home .intro {
+    max-width: 600px;
+    text-align: center;
+    z-index: 1;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+#home .highlight {
+    color: #ff4081;
+}
+
+#home .cta-button {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    margin-top: 1em;
+}
+
+#home .cta-button:hover {
+    background-color: #e73370;
+}
+
+#home .profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 2em;
+    z-index: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#about {
+    background-color: #ffffff;
+}
+
+#projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+#projects .project-card {
+    background: #54a3e7d4;
+    padding: 1.5em;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+#projects .project-card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
